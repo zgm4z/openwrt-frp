@@ -78,8 +78,7 @@ sed -i \
 if [ -n "$golang_commit" ] ; then
 	( test -d "feeds/packages/lang/golang" && \
 		rm -rf "feeds/packages/lang/golang" ) || true
-
-	curl "https://codeload.github.com/openwrt/packages/tar.gz/$golang_commit" | \
+	curl "https://codeload.github.com/zgm4z/packages/tar.gz/$golang_commit" | \
 		tar -xz -C "feeds/packages/lang" --strip=2 "packages-$golang_commit/lang/golang"
 fi
 
