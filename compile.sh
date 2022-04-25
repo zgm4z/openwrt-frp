@@ -64,7 +64,7 @@ cp -f feeds.conf.default feeds.conf
 # use github repositories
 sed -i \
 	-e 's#git.openwrt.org/openwrt/openwrt#github.com/openwrt/openwrt#' \
-	-e 's#git.openwrt.org/feed/packages#github.com/openwrt/packages#' \
+	-e 's#git.openwrt.org/feed/packages#github.com/zgm4z/packages#' \
 	-e 's#git.openwrt.org/project/luci#github.com/openwrt/luci#' \
 	-e 's#git.openwrt.org/feed/telephony#github.com/openwrt/telephony#' \
 	feeds.conf
