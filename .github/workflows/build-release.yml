@@ -48,8 +48,8 @@ jobs:
         run: sh compile.sh
 
       - name: Release and Upload Assets
-        uses: softprops/action-gh-release@v1
+        uses: zgm4z/action-gh-release@v1
         with:
           files: "*.ipk"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.FRPC_GITHUB_TOKEN }}
